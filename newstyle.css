@@ -71,13 +71,12 @@ header ul li a:hover, .hed{
 .container {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+  gap: 40px;
 }
 .card {
     display: grid;
-    grid-template-columns: 300px;
     grid-template-rows: 210px 210px;
     grid-template-areas: "image" "image";
     border-radius: 18px;
